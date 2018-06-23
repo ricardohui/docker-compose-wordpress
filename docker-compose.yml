@@ -19,9 +19,5 @@ services:
       - db
     deploy:
       replicas: 1
-      resources:
-        limits:
-         cpus: '0.5'
-         memory: 200M
 volumes:
   dbdata:
