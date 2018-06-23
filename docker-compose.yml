@@ -16,9 +16,7 @@ services:
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: rootPassword
     deploy:
-      mode: replicated
       replicas: 2
-      endpoint_mode: vip
       resources:
         limits:
          cpus: '0.5'
