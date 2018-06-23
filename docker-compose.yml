@@ -16,7 +16,7 @@ services:
       WORDPRESS_DB_USER: root
       WORDPRESS_DB_PASSWORD: rootPassword
     deploy:
-      replicas: 2
+      replicas: 1
       resources:
         limits:
          cpus: '0.5'
