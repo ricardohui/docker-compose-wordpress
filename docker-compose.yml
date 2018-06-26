@@ -7,6 +7,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: rootPassword
       MYSQL_DATABASE: wordpress_db
+    deploy:
+      replicas: 2
   wordpress:
     image: wordpress:latest
     ports:
@@ -18,6 +20,6 @@ services:
     links:
       - db
     deploy:
-      replicas: 1
+      replicas: 2
 volumes:
   dbdata:
